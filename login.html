@@ -1,0 +1,47 @@
+
+<div class="container-fluid" style="background: linear-gradient(to right, rgba(63, 14, 64, 0.466), #3F0E40);display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-family: 'Montserrat', sans-serif;
+height: 100vh;">
+    <h2>#Connect for a whone new Journey</h2>
+<div class="container" id="container">
+    <div class="form-container sign-in-container">
+        <form action="#" ng-submit = "formSubmit()" class="form">
+            <h1>Sign in</h1>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <!-- <span>or use your account</span> -->
+            <div class="form-group">
+                <input type="text"  ng-model="username" placeholder="username" required="" style="padding: 20px;" />
+                </div> 
+                <div class="form-group">
+                    <input type="password" class="form-control" ng-model="password" placeholder="password" required="" style="padding: 20px;" />
+                    </div>
+            <a href="#">Forgot your password?</a>
+            <div class="form-group">
+                <button type="submit" style="cursor: pointer;">Login</button>
+                <span class="text-danger" style="color:red">{{ error }}</span>
+             </div>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>heyy! Whats up </h1>
+                <p>Share your Details , Lets Get Started!!!!!!!!</p>
+                <button class="ghost" id="signUp" style="cursor: pointer;">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
